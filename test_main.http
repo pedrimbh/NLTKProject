@@ -1,11 +1,15 @@
 # Test your FastAPI endpoints
 
-GET http://127.0.0.1:8000/
-Accept: application/json
+POST http://127.0.0.1:8000/sentiment-analysis
+Content-Type: application/json
 
+{
+  "text": "I love my family"
+}
 ###
+POST http://127.0.0.1:8000/tokenizer
+Content-Type: application/json
 
-GET http://127.0.0.1:8000/hello/User
-Accept: application/json
-
-###
+{
+  "text": "I love my family"
+}
