@@ -4,12 +4,12 @@ POST http://127.0.0.1:8000/sentiment-analysis
 Content-Type: application/json
 
 {
-  "text": "I love my family"
+  "text": "I love my life"
 }
 ###
 POST http://127.0.0.1:8000/tokenizer
 Content-Type: application/json
 
 {
-  "text": "I love my family"
+  "text": "I love my life"
 }

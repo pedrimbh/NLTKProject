@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efce8fc3-6ef6-4039-8a95-4ca892182e70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Config/Config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MLModels/SentimentAnalysisMLModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MLModels/TokenizeMLModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/InputModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Routes/SentimentAnalysisRoute.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Routes/TokenizeRoute.py" afterDir="false" />
+    <list default="true" id="efce8fc3-6ef6-4039-8a95-4ca892182e70" name="Changes" comment="the ml project using nltk">
+      <change afterPath="$PROJECT_DIR$/test_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/NLTKProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NLTKProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/SentimentAnalysisRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/SentimentAnalysisRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/TokenizeRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/TokenizeRoute.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +26,26 @@
         <option value="HTTP Public Environment File" />
         <option value="Dockerfile" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pedrimbh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e591b78a-3c2a-45fc-94f8-f18e66aed19a" />
+        <option name="url" value="https://github.com/pedrimbh/NLTKProject.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
@@ -52,36 +63,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;FastAPI.NLTKProject.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.All in test_main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/joaopedromesquita/PycharmProjects/NLTKProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "FastAPI.NLTKProject.executor": "Run",
+    "HTTP Request.All in test_main.executor": "Run",
+    "Python tests.Python tests for test_main.TestMain.executor": "Run",
+    "Python tests.Python tests for test_main.test_sentiment_analysis.executor": "Run",
+    "Python tests.Python tests for test_main.test_tokenize.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/joaopedromesquita/PycharmProjects/NLTKProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Config" />
       <recent name="$PROJECT_DIR$/MLModels" />
-      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/models" />
     </key>
   </component>
-  <component name="RunManager" selected="FastAPI.NLTKProject">
+  <component name="RunManager" selected="HTTP Request.All in test_main">
     <configuration name="All in test_main" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test_main.http">
       <method v="2" />
     </configuration>
@@ -101,9 +115,60 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_main.TestMain" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NLTKProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_main.TestMain&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_main.test_sentiment_analysis" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NLTKProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_main.test_sentiment_analysis&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_main.test_tokenize" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NLTKProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_main.test_tokenize&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.All in test_main" />
+        <item itemvalue="Python tests.Python tests for test_main.test_sentiment_analysis" />
+        <item itemvalue="Python tests.Python tests for test_main.TestMain" />
+        <item itemvalue="Python tests.Python tests for test_main.test_tokenize" />
       </list>
     </recent_temporary>
   </component>
@@ -126,14 +191,29 @@
       <workItem from="1707480296470" duration="6821000" />
       <workItem from="1707536058024" duration="197000" />
       <workItem from="1707536279590" duration="256000" />
-      <workItem from="1707536595080" duration="151000" />
+      <workItem from="1707536595080" duration="2752000" />
+      <workItem from="1707617540341" duration="1762000" />
     </task>
+    <task id="LOCAL-00001" summary="the ml project using nltk">
+      <option name="closed" value="true" />
+      <created>1707536837207</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707536837207</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="the ml project using nltk" />
+    <option name="LAST_COMMIT_MESSAGE" value="the ml project using nltk" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NLTKProject$NLTKProject.coverage" NAME="NLTKProject Coverage Results" MODIFIED="1707536692267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/NLTKProject$NLTKProject.coverage" NAME="NLTKProject Coverage Results" MODIFIED="1707618839949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/NLTKProject$.coverage" NAME=" Coverage Results" MODIFIED="1707618909259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
 </project>

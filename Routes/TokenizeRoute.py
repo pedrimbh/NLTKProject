@@ -14,7 +14,7 @@ async def tokenize_text(input_data: InputModel):
         input_data (InputModel): O modelo de entrada contendo o texto a ser tokenizado.
 
     Returns:
-        dict: Um dicionário contendo o resultado da tokenização.
+        list: Uma lista de tokens (palavras) extraídos do texto fornecido.
 
     Raises:
         HTTPException: Se o texto fornecido estiver vazio.

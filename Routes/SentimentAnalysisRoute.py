@@ -8,13 +8,14 @@ router = APIRouter()
 @router.post("/sentiment-analysis", tags=["Sentiment Analysis"])
 async def analyze_sentiment(input_data: InputModel):
     """
-    Analisa o sentimento de um texto fornecido.
+    Analisa o sentimento de um texto fornecido, aceita somente frases em Ingles.
 
     Args:
         input_data (InputModel): O modelo de entrada contendo o texto a ser analisado.
 
     Returns:
-        dict: Um dicionário contendo o resultado da análise de sentimento.
+         dict: Um dicionário contendo a pontuação de sentimento calculada. A pontuação inclui valores
+               para 'neg' (negativo), 'neu' (neutro), 'pos' (positivo) e 'compound' (composto).
 
     Raises:
         HTTPException: Se o texto fornecido estiver vazio.
