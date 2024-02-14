@@ -5,7 +5,7 @@ from MLModels.TokenizeMLModel import tokenize
 router = APIRouter()
 
 
-@router.post("/tokenizer", tags=["Tokenizer"])
+@router.post("/tokenizer", tags=["Tokenizer"],summary="Tokeniza a sentenca enviada, aceita Ingles e Portugues.")
 async def tokenize_text(input_data: InputModel):
     """
     Tokeniza o texto fornecido.

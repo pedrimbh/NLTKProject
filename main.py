@@ -5,7 +5,7 @@ from Routes.TokenizeRoute import router as token_router
 from Config.Config import Config
 
 Config()
-app = FastAPI()
+app = FastAPI(title="API NLTK Blip tester", version="0.0.1",description="NLTK sentiment analysis and tokenization tool")
 
 app.include_router(router=sentiment_analysis_router)
 app.include_router(router=token_router)
