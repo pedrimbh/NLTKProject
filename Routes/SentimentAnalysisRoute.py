@@ -5,7 +5,7 @@ from MLModels.SentimentAnalysisMLModel import sentiment_analysis
 router = APIRouter()
 
 
-@router.post("/sentiment-analysis", tags=["Sentiment Analysis"],summary="Retorna a analise de sentimento baseado no texto inserido, aceita somente textos em Ingles",response_model=InputModel)
+@router.post("/sentiment-analysis", tags=["Sentiment Analysis"],summary="Retorna a analise de sentimento baseado no texto inserido, aceita somente textos em Ingles")
 async def analyze_sentiment(input_data: InputModel):
     """
     Analisa o sentimento de um texto fornecido, aceita somente frases em Ingles.
