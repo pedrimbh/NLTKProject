@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="efce8fc3-6ef6-4039-8a95-4ca892182e70" name="Changes" comment="make a litle modificate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/SentimentAnalysisRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/SentimentAnalysisRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/TokenizeRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/TokenizeRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -192,6 +190,7 @@
       <workItem from="1707617540341" duration="5421000" />
       <workItem from="1707775015498" duration="182000" />
       <workItem from="1707932949964" duration="297000" />
+      <workItem from="1707933683085" duration="127000" />
     </task>
     <task id="LOCAL-00001" summary="the ml project using nltk">
       <option name="closed" value="true" />
@@ -222,6 +221,29 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="the ml project using nltk" />
