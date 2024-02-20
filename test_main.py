@@ -1,5 +1,6 @@
 from fastapi.testclient import TestClient
 from main import app
+
 client = TestClient(app)
 
 
@@ -12,4 +13,4 @@ def test_sentiment_analysis():
 def test_tokenize():
     response = client.post("/tokenizer", json={"text": "I love my life"})
     assert response.status_code == 200
-    assert response.json() == {'tokens': [ 'love', 'my', 'life']}
+    assert response.json() == {'tokens': ['I', 'love', 'my', 'life']}
